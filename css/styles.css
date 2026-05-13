@@ -67,7 +67,7 @@ button, input, textarea { font: inherit; }
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 10px;
   min-height: 48px; padding: 0 22px; border: 1px solid var(--primary); transition: .25s ease;
-  background: transparent; color: var(--foreground); cursor: pointer;
+  background: transparent; color: var(--foreground); cursor: pointer; border-radius: 2%;
 }
 .btn:hover { transform: translateY(-1px); box-shadow: var(--shadow); }
 .btn-primary { background: var(--primary); color: var(--primary-foreground); }
@@ -77,7 +77,7 @@ button, input, textarea { font: inherit; }
   content: ''; position: absolute; inset: -20px; background: var(--blush); filter: blur(40px); opacity: .55; box-shadow: var(--glow);
 }
 .hero-media img, .image-frame img { position: relative; width: 100%; height: 100%; object-fit: cover; box-shadow: var(--shadow); }
-.hero-media img { aspect-ratio: 4 / 5; }
+.hero-media img { aspect-ratio: 5 / 5; }
 .section { padding: 88px 0; }
 .section.alt { background: hsl(28 33% 92% / 0.6); }
 .section-head { text-align: center; margin-bottom: 42px; }
@@ -89,11 +89,11 @@ button, input, textarea { font: inherit; }
 .category-card h3, .product-card h3 { margin-top: 16px; font-size: 1.8rem; }
 .category-card span { color: var(--muted-foreground); text-transform: uppercase; letter-spacing: 0.18em; font-size: 0.72rem; }
 .about-grid, .contact-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.image-frame img { aspect-ratio: 4 / 5; }
+.image-frame img { aspect-ratio: 5 / 5; }
 .gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .gallery a { overflow: hidden; }
 .gallery img { aspect-ratio: 1 / 1; object-fit: cover; transition: transform 1s ease; }
-.testimonials { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.testimonials { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .testimonial, .value-card, .contact-card {
   background: var(--card);
   box-shadow: var(--shadow);
@@ -125,11 +125,42 @@ button, input, textarea { font: inherit; }
   width: 100%; border: 1px solid var(--border); background: transparent; padding: 14px 16px; color: var(--foreground);
 }
 .contact-card-list { display: grid; gap: 16px; }
-.site-footer { border-top: 1px solid hsl(28 23% 84% / 0.8); padding: 24px 0 34px; }
+.site-footer { border-top: 1px solid hsl(28 23% 84% / 0.8); padding: 24px 0 34px;  background: linear-gradient(180deg, hsl(36 35% 96%), hsl(28 40% 94%)); width: 100%; z-index: 999; }
+/* Fixed footer ONLY on larger screens */
+@media (min-width: 992px){
+
+  .site-footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+
+  body{
+    padding-bottom: 90px;
+  }
+}
+
+/* Normal footer on mobile */
+@media (max-width: 991px){
+
+  .site-footer{
+    position: relative;
+  }
+
+  .footer-row{
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
 .footer-row { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 14px; color: var(--muted-foreground); }
 .whatsapp-float {
-  position: fixed; right: 18px; bottom: 18px; width: 58px; height: 58px; border-radius: 999px;
+  position: fixed; right: 18px; bottom: 18px; width: 50px; height: 50px; border-radius: 999px;
   background: hsl(142 70% 45%); color: white; display: grid; place-items: center; font-size: 1.6rem; box-shadow: 0 14px 32px -16px hsl(142 70% 30% / 0.7);
+}
+.insta-float {
+  position: fixed; right: 90px; bottom: 18px; width: 50px; height: 50px; border-radius: 999px;
+  background: #E1306C; color: white; display: grid; place-items: center; font-size: 1.6rem; box-shadow: 0 14px 32px -16px #E1306C;;
 }
 @media (max-width: 960px) {
   .hero-grid, .about-grid, .contact-grid, .categories, .gallery, .testimonials, .values, .shop-grid { grid-template-columns: 1fr 1fr; }
@@ -143,3 +174,5 @@ button, input, textarea { font: inherit; }
   .page-hero { padding: 56px 0 44px; }
   .product-meta { flex-direction: column; align-items: flex-start; }
 }
+
+
