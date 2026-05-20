@@ -1,7 +1,7 @@
 const SITE = {
   brand: 'GlowKatha',
   tagline: 'Handcrafted Premium Gifts & Return Favours',
-  whatsapp: '+917838655605',
+  whatsapp: '919315679286',
   instagram: 'https://instagram.com/glowkatha',
   email: 'hello@glowkatha.com',
   location: 'Mumbai, India'

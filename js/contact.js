@@ -6,7 +6,7 @@ if (form) {
     const name = String(data.get('name') || '').trim();
     const email = String(data.get('email') || '').trim();
     const message = String(data.get('message') || '').trim();
-    const text = `Hi GlowKatha! I'm ${name}. My email is ${email}. ${message}`;
+    const text = `Hi GlowKatha! I'm ${name}. My email is ${email}.Message : ${message}`;
     window.open(waLink(text), '_blank', 'noopener,noreferrer');
     form.reset();
   });

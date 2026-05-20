@@ -5,7 +5,7 @@ const PRODUCTS = [
 
   { id: '3', name: 'Baby shower themed wax sachet', category: 'Baby Shower', image: 'assets/Baby_shower_Theme_Wax_sachets.jpeg', description: 'Long-burning amber glass, cotton wick.' },
 
-  { id: '4', name: 'Teddy Heart in Jar Candle', category: 'Baby Shower', image: 'assets/Teddy_heart_in_jar.jpeg', description: 'Long-burning amber glass, cotton wick.' },
+  // { id: '4', name: 'Teddy Heart in Jar Candle', category: 'Baby Shower', image: 'assets/Teddy_heart_in_jar.jpeg', description: 'Long-burning amber glass, cotton wick.' },
 
   { id: '5', name: 'Baby feet in short glass jar', category: 'Baby Shower', image: 'assets/Baby_shower_feet_in_short_glass_jar.jpeg', description: 'Long-burning amber glass, cotton wick.' },
 
@@ -52,21 +52,21 @@ const PRODUCTS = [
   
   { id: '26', name: 'Short Glass Jar', category: 'Glass Jar Candle', image: 'assets/Short_glass_jar.jpg', description: 'Delicate rose & oud blended wax melts.' },
 
-  { id: '27', name: 'Heart Wax Melts', category: 'Wax sachets', image: 'assets/Heart_wax_melts.jpeg', description: 'Mini candle wrapped with satin ribbon.' },
+  { id: '27', name: 'Heart Wax Melts', category: 'Wax sachets/Wax melts', image: 'assets/Heart_wax_melts.jpeg', description: 'Mini candle wrapped with satin ribbon.' },
   
-  { id: '28', name: 'Cloud Wax Melts', category: 'Wax sachets', image: 'assets/Cloud_wax_melts.jpeg', description: 'Mini candle wrapped with satin ribbon.' },
+  { id: '28', name: 'Cloud Wax Melts', category: 'Wax sachets/Wax melts', image: 'assets/Cloud_wax_melts.jpeg', description: 'Mini candle wrapped with satin ribbon.' },
 
-  { id: '29', name: 'Floral Vase Wax Sachets', category: 'Wax sachets', image: 'assets/Floral_vase_wax_sachets.png', description: 'Mini candle wrapped with satin ribbon.' },
+  { id: '29', name: 'Floral Vase Wax Sachets', category: 'Wax sachets/Wax melts', image: 'assets/Floral_vase_wax_sachets.png', description: 'Mini candle wrapped with satin ribbon.' },
 
-  { id: '30', name: 'Floral Wax Sachets', category: 'Wax sachets', image: 'assets/Floral_wax_sachets.jpeg', description: 'Mini candle wrapped with satin ribbon.' },
+  { id: '30', name: 'Floral Wax Sachets', category: 'Wax sachets/Wax melts', image: 'assets/Floral_wax_sachets.jpeg', description: 'Mini candle wrapped with satin ribbon.' },
 
-  { id: '31', name: 'Dried Rose Wax Sachet', category: 'Wax sachets', image: 'assets/Dried_rose_wax_sachets.jpeg', description: 'Mini candle wrapped with satin ribbon.' },
+  { id: '31', name: 'Dried Rose Wax Sachet', category: 'Wax sachets/Wax melts', image: 'assets/Dried_rose_wax_sachets.jpeg', description: 'Mini candle wrapped with satin ribbon.' },
 
-  { id: '32', name: 'Wax Melts Bouquet in Concrete Jar', category: 'Bouquet', image: 'assets/Wax_Melts_Bouquet_in_Concrete_Jar.jpeg', description: 'Curated hamper — personalised just for you.' },
+  { id: '32', name: 'Wax Melts Bouquet in Concrete Jar', category: 'Bouquet Candles', image: 'assets/Wax_Melts_Bouquet_in_Concrete_Jar.jpeg', description: 'Curated hamper — personalised just for you.' },
 
-  { id: '33', name: 'Wax Melts Bouquet in Glass Jar', category: 'Bouquet', image: 'assets/Wax_Melts_Bouquet_in_Glass_Jar.jpeg', description: 'Curated hamper — personalised just for you.' },
+  { id: '33', name: 'Wax Melts Bouquet in Glass Jar', category: 'Bouquet Candles', image: 'assets/Wax_Melts_Bouquet_in_Glass_Jar.jpeg', description: 'Curated hamper — personalised just for you.' },
 
-  { id: '34', name: 'Wax Melts Bouquet in Kulhad Jar', category: 'Bouquet', image: 'assets/Wax_Melts_Bouquet_in_Kulhad_Jar.jpeg', description: 'Curated hamper — personalised just for you.' },
+  { id: '34', name: 'Wax Melts Bouquet in Kulhad Jar', category: 'Bouquet Candles', image: 'assets/Wax_Melts_Bouquet_in_Kulhad_Jar.jpeg', description: 'Curated hamper — personalised just for you.' },
 
   { id: '35', name: 'Ocean Theme in coco shell', category: 'Ocean Theme Candles', image: 'assets/Ocean_Theme_in_coco_shell.jpeg', description: 'Curated hamper — personalised just for you.' },
 
@@ -74,7 +74,7 @@ const PRODUCTS = [
 
 ];
 
-const filters = ['All', 'Baby Shower', 'Glass Jar Candle', 'Wax sachets', 'Bouquet', 'Ocean Theme Candles'];
+const filters = ['All', 'Baby Shower', 'Glass Jar Candle', 'Wax sachets/Wax melts', 'Bouquet Candles', 'Ocean Theme Candles'];
 const filterWrap = document.getElementById('filters');
 const grid = document.getElementById('product-grid');
 const empty = document.getElementById('empty-state');
